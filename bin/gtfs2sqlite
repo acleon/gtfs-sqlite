@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/../vendor/autoload.php';
+
+use ACLeon\Console\ImportCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$application->add($command = new ImportCommand());
+$application->setDefaultCommand($command->getName(), true);
+$application->run();

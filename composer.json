@@ -1,0 +1,15 @@
+{
+    "require": {
+        "doctrine/dbal": "^2.9",
+        "league/csv": "^9.2",
+        "league/flysystem": "^1.0",
+        "league/flysystem-ziparchive": "^1.0",
+        "league/pipeline": "^1.0",
+        "symfony/console": "^4.2"
+    },
+    "autoload": {
+       "psr-4": {
+           "ACLeon\\": "src/"
+       }
+   }
+}
